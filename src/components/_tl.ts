@@ -107,7 +107,7 @@ export const characters: Array<TranslationItem> = [
 		romaji: 'nokonoko',
 		src: 'koopa_troopa.png'
 	},
-	{ english: 'Lakitu', alt: 'Jugemu ', japanese: 'ジュゲム', romaji: 'jugemu', src: 'lakitu.png' },
+	{ english: 'Lakitu', alt: 'Jugemu', japanese: 'ジュゲム', romaji: 'jugemu', src: 'lakitu.png' },
 	{ english: 'Larry', japanese: 'ラリー', romaji: 'rariー', src: 'larry.png' },
 	{ english: 'Lemy', japanese: 'レミー', romaji: 'remiー', src: 'lemy.png' },
 	{ english: 'Link', japanese: 'リンク', romaji: 'rinku', src: 'link.png' },

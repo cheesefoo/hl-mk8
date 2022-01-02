@@ -60,7 +60,7 @@
 		<div class="grid-rows-3 gap-8">
 			<div class="max-h-full overflow-hidden">
 				<h2 class="text-white mb-8 text-center text-xl font-bold">Notable Carts</h2>
-				<div class="grid grid-cols-4 gap-4 overflow-hidden">
+				<div class="grid grid-cols-4 gap-8 overflow-hidden">
 					{#each cart as c}
 						<div class="col-span-1"><TranslatedItem {...c} /></div>
 					{/each}
@@ -151,6 +151,7 @@
 			</li>
 		</ul>
 	</div>
+<span class='text-white text-xs'>Images from <a class="text-sky-400" href='https://www.mariowiki.com/Mario_Kart_8_Deluxe'>mariowiki</a> & <a class="text-sky-400" href='https://game8.jp/mariokart8dx'>game8</a></span>
 </main>
 
 <style>

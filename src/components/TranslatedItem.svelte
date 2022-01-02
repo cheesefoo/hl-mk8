@@ -4,6 +4,7 @@
 	export let romaji;
 	export let src;
 
+	export let alt;
 	let altName = hasAltName(english);
 	function hasAltName(name: string) {
 		let parenIndex = name.lastIndexOf('(');
@@ -16,12 +17,17 @@
 </script>
 
 <div class="flex flex-col">
-	<img class="flex-none h-1/2" {src} alt={english} />
+	<img class=" " {src} alt={english} />
 	<div class="flex flex-none h-1/2 flex-col text-center">
-		<span class="text-gray-100 mt-2 text-sm whitespace-nowrap">{english}</span>
-		<span class="text-gray-100 text-sm alt">{altName}</span>
-		<span class="text-gray-400 text-xs">{romaji}</span>
-		<span class="text-gray-300 text-xs whitespace-nowrap">{japanese}</span>
+		<span class="text-gray-100 mt-2 text-base whitespace-nowrap">{english}</span>
+		{#if alt}
+		<span class="text-gray-100 text-base alt">({alt})</span>
+			{:else}
+			<span class="text-gray-100 text-base alt"></span>
+
+			{/if}
+		<span class="text-gray-400 text-sm">{romaji}</span>
+		<span class="text-gray-300 text-sm whitespace-nowrap">{japanese}</span>
 	</div>
 </div>
 
