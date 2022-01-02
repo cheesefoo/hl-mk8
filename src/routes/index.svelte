@@ -6,6 +6,11 @@
 	export let cups = maps;
 	export let item = items;
 	export let cart = carts;
+	import rules from '/static/images/rules.jpg';
+	import groups from '/static/images/groups.jpg';
+	import enid from '/static/images/2021enid.png';
+	import enidthumb from '/static/images/2021enid_thumb.png';
+	import jp from '/static/images/2021jp.png';
 
 	import '../app.css';
 	import { Lightbox } from 'svelte-lightbox';
@@ -16,7 +21,7 @@
 	<div>
 		<div class="grid grid-cols-2 w-11/12 h-auto m-auto">
 			<div>
-				<Lightbox><img src="../../static/images/groups.jpg" alt="groups" /></Lightbox>
+				<Lightbox><img src={groups} alt="groups" /></Lightbox>
 				<a
 					class="text-indigo-500"
 					href="https://twitter.com/tokoyamitowa/status/1473630447771217936/photo/1"
@@ -24,13 +29,13 @@
 				>
 			</div>
 			<div>
-				<Lightbox><img src="../../static/images/rules.jpg" alt="rules" /></Lightbox>
+				<Lightbox><img src={rules} alt="rules" /></Lightbox>
 			</div>
 		</div>
 		<div class="grid grid-cols-2 w-11/12 h-auto m-auto">
 			<div>
 				<Lightbox imagePreset="fit">
-					<img class="aspect-video" src="../../static/images/2021jp.png" alt="statsjp" />
+					<img class="aspect-video" src={jp} alt="statsjp" />
 				</Lightbox>
 				<a
 					class="text-indigo-500"
@@ -40,8 +45,8 @@
 			</div>
 			<div>
 				<Lightbox thumbnail clickToClose imagePreset="fullscreen">
-					<img slot="thumbnail" src="../../static/images/2021enid_thumb.png" alt="statsen" />
-					<img slot="image" src="../../static/images/2021enid.png" alt="statsen" />
+					<img slot="thumbnail" src={enidthumb} alt="statsen" />
+					<img slot="image" src={enid} alt="statsen" />
 				</Lightbox>
 				<a
 					class="text-indigo-500"
@@ -114,30 +119,37 @@
 			<li class="text-gray-100 mt-2 text-2xl list-disc">
 				How do you unlock parts?
 				<ul class="list-outside mt-2 ml-4">
-					<li>Parts are randomly obtained for every 50 coins for the first 1000 coins, and every 100 coins afterwards.</li>
+					<li>
+						Parts are randomly obtained for every 50 coins for the first 1000 coins, and every 100
+						coins afterwards.
+					</li>
 				</ul>
 			</li>
 			<li class="text-gray-100 mt-2 text-2xl list-disc">
 				Why do you want to pick up coins?
 				<ul class="list-outside mt-2 ml-4">
-					<li>Other than the above, your maximum speed increases for every coin, and you get a small speed boost upon pickup. Coins cap at 10.</li>
+					<li>
+						Other than the above, your maximum speed increases for every coin, and you get a small
+						speed boost upon pickup. Coins cap at 10.
+					</li>
 				</ul>
 			</li>
 			<li class="text-gray-100 mt-2 text-2xl list-disc">
 				wtf is Aqua doing?
 				<ul class="list-outside mt-2 ml-4">
-					<li>Holding onto a Bullet Bill:
-						<a class='text-sky-400'  href='https://www.youtube.com/watch?v=3onCuflsloI'>Video</a>
-						TL;DW: You can extend how long your Bullet Bill lasts.</li>
-					<li>Backing up at the start:
-						<a class='text-sky-400' href='https://www.youtube.com/watch?v=omao6mgvtb4'>Video</a>
+					<li>
+						Holding onto a Bullet Bill:
+						<a class="text-sky-400" href="https://www.youtube.com/watch?v=3onCuflsloI">Video</a>
+						TL;DW: You can extend how long your Bullet Bill lasts.
+					</li>
+					<li>
+						Backing up at the start:
+						<a class="text-sky-400" href="https://www.youtube.com/watch?v=omao6mgvtb4">Video</a>
 						TL;DW: Called sandbagging, you do this to get better items (for example, doing the above.)
 					</li>
 				</ul>
 			</li>
 		</ul>
-
-
 	</div>
 </main>
 
