@@ -56,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid grid-cols-2 gap-8 w-11/12 max-w-full h-auto m-auto ">
+	<div class="grid grid-cols-1 gap-8 w-11/12 max-w-full h-auto m-auto lg:grid-cols-2">
 		<div class="grid-rows-3 gap-8">
 			<div class="max-h-full overflow-hidden">
 				<h2 class="text-white mb-8 text-center text-xl font-bold">Notable Carts</h2>
@@ -76,47 +76,50 @@
 			</div>
 			<div>
 				<h2 class="text-white mb-8 text-center text-xl font-bold">Characters</h2>
-				<div class="grid grid-cols-8 gap-4">
+				<div class="grid grid-cols-4 lg:grid-cols-8 gap-4">
 					{#each charas as c}
 						<div class="col-span-1"><TranslatedItem {...c} /></div>
 					{/each}
 				</div>
 			</div>
 		</div>
-		<div class="max-h-full ">
+		<div class=" ">
 			<h2 class="text-white mb-8 text-center text-xl font-bold">Courses</h2>
-			<!--			<div class="grid grid-cols-12 gap-x-4 ml-1 mr-1">
+			<div class="grid grid-cols-2 gap-12 ml-4 mr-4 mt-8 lg:hidden">
 				{#each cups as cup}
-					<div class="grid grid-flow-row gap-y-4 col-span-2">
-						<div class=' '><TranslatedItem {...cup.name} /></div>
+					<div class=" ">
+						<div class='mb-4'>
+							<TranslatedItem {...cup.name} /></div>
 					{#each cup.courses as course}
-						<div class=" "><TranslatedItem {...course} /></div>
+						<div class="mb-4">
+							<TranslatedItem {...course} />
+						</div>
 					{/each}
 					</div>
 				{/each}
-			</div>-->
-			<table class="table-auto">
+			</div>
+			<table class="table-auto hidden lg:block">
 				{#each cups as cup}
 					<tr>
-						<td class="w-1/6 h-1/6"><TranslatedItem {...cup.name} /></td>
+						<td class="lg:w-1/6 lg:h-1/6"><TranslatedItem {...cup.name} /></td>
 						{#each cup.courses as course}
-							<td class="w-1/5 h-1/6 pl-4 pr-4"><TranslatedItem {...course} /></td>
+							<td class="lg:w-1/5 lg:h-1/6 pl-4 pr-4"><TranslatedItem {...course} /></td>
 						{/each}
 					</tr>
 				{/each}
 			</table>
 		</div>
 	</div>
-	<div class="flex flex-col items-center">
-		<h1 class="text-gray-100 mt-8 text-6xl text-center">FAQ</h1>
+	<div class="flex flex-col items-center ml-8 mr-8">
+		<h1 class="text-gray-100 mt-8 text-3xl lg:text-6xl text-center">FAQ</h1>
 		<ul class=" ">
-			<li class="text-gray-100 mt-2 text-2xl list-disc">
+			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				Why do so many people use Waluigi/Wiggler Cart?
 				<ul class="list-outside mt-2 ml-4">
 					<li>It's a meta setup for having good stats.</li>
 				</ul>
 			</li>
-			<li class="text-gray-100 mt-2 text-2xl list-disc">
+			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				How do you unlock parts?
 				<ul class="list-outside mt-2 ml-4">
 					<li>
@@ -125,7 +128,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="text-gray-100 mt-2 text-2xl list-disc">
+			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				Why do you want to pick up coins?
 				<ul class="list-outside mt-2 ml-4">
 					<li>
@@ -134,7 +137,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="text-gray-100 mt-2 text-2xl list-disc">
+			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				What is a dango?
 				<ul class="list-outside mt-2 ml-4">
 					<li>
@@ -142,7 +145,7 @@
 					</li>
 				</ul>
 			</li>
-			<li class="text-gray-100 mt-2 text-2xl list-disc">
+			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				wtf is Aqua doing?
 				<ul class="list-outside mt-2 ml-4">
 					<li>

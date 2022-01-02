@@ -16,8 +16,8 @@
 	import '../app.css';
 </script>
 
-<div class="flex flex-col">
-	<img class=" " {src} alt={english} />
+<div class="flex flex-col flex-shrink">
+	<img class="shrink" {src} alt={english} />
 	<div class="flex flex-none h-1/2 flex-col text-center">
 		<span class="text-gray-100 mt-2 text-base whitespace-nowrap">{english}</span>
 		{#if alt}
