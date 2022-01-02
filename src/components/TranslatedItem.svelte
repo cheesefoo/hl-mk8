@@ -21,11 +21,10 @@
 	<div class="flex flex-none h-1/2 flex-col text-center">
 		<span class="text-gray-100 mt-2 text-base whitespace-nowrap">{english}</span>
 		{#if alt}
-		<span class="text-gray-100 text-base alt">({alt})</span>
-			{:else}
-			<span class="text-gray-100 text-base alt"></span>
-
-			{/if}
+			<span class="text-gray-100 text-base alt">({alt})</span>
+		{:else}
+			<span class="text-gray-100 text-base alt" />
+		{/if}
 		<span class="text-gray-400 text-sm">{romaji}</span>
 		<span class="text-gray-300 text-sm whitespace-nowrap">{japanese}</span>
 	</div>

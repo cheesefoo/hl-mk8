@@ -56,6 +56,13 @@
 			</div>
 		</div>
 	</div>
+
+	<a
+		class="flex items-center justify-center text-sky-400 text-xl lg:text-2xl "
+		href="https://docs.google.com/spreadsheets/d/1XH1hPKc-RczTbDCilbQ3C4HJCySwHDN8W7o0T0KZsZA/edit#gid=224210193"
+		>Nerd spreadsheet by silverbass#2407</a
+	>
+
 	<div class="grid grid-cols-1 gap-8 w-11/12 max-w-full h-auto m-auto lg:grid-cols-2">
 		<div class="grid-rows-3 gap-8">
 			<div class="max-h-full overflow-hidden">
@@ -88,13 +95,14 @@
 			<div class="grid grid-cols-2 gap-12 ml-4 mr-4 mt-8 lg:hidden">
 				{#each cups as cup}
 					<div class=" ">
-						<div class='mb-4'>
-							<TranslatedItem {...cup.name} /></div>
-					{#each cup.courses as course}
 						<div class="mb-4">
-							<TranslatedItem {...course} />
+							<TranslatedItem {...cup.name} />
 						</div>
-					{/each}
+						{#each cup.courses as course}
+							<div class="mb-4">
+								<TranslatedItem {...course} />
+							</div>
+						{/each}
 					</div>
 				{/each}
 			</div>
@@ -110,7 +118,7 @@
 			</table>
 		</div>
 	</div>
-	<div class="flex flex-col items-center ml-8 mr-8">
+	<div class="flex flex-col items-center ml-8 mr-8 mb-56">
 		<h1 class="text-gray-100 mt-8 text-3xl lg:text-6xl text-center">FAQ</h1>
 		<ul class=" ">
 			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
@@ -140,9 +148,7 @@
 			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
 				What is a dango?
 				<ul class="list-outside mt-2 ml-4">
-					<li>
-						A clump of players; when a lot of cars are in a group near each other.
-					</li>
+					<li>A clump of players; when a lot of cars are in a group near each other.</li>
 				</ul>
 			</li>
 			<li class="text-gray-100 mt-2 text-l lg:text-2xl list-disc">
@@ -162,7 +168,12 @@
 			</li>
 		</ul>
 	</div>
-<span class='text-white text-xs'>Images from <a class="text-sky-400" href='https://www.mariowiki.com/Mario_Kart_8_Deluxe'>mariowiki</a> & <a class="text-sky-400" href='https://game8.jp/mariokart8dx'>game8</a></span>
+	<span class="text-white text-xs"
+		>Images from <a class="text-sky-400" href="https://www.mariowiki.com/Mario_Kart_8_Deluxe"
+			>mariowiki</a
+		>
+		& <a class="text-sky-400" href="https://game8.jp/mariokart8dx">game8</a></span
+	>
 </main>
 
 <style>

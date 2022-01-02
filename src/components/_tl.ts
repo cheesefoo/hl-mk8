@@ -285,7 +285,7 @@ export const maps: Array<CupItem> = [
 				alt: 'Koopa Castle',
 				japanese: 'クッパキャッスル',
 				romaji: 'kuppa kyassuru',
-				src: "Bowsers_Castle.png"
+				src: 'Bowsers_Castle.png'
 			},
 			{
 				english: 'Rainbow Road',
@@ -386,7 +386,7 @@ export const maps: Array<CupItem> = [
 				english: "(N64)Toad's Turnpike",
 				japanese: 'キノピオハイウェイ',
 				romaji: 'kinopio haiuei',
-				src: "Toads_Turnpike.png"
+				src: 'Toads_Turnpike.png'
 			}
 		]
 	},
@@ -497,7 +497,7 @@ export const maps: Array<CupItem> = [
 				english: "(WII)Wario's Gold Mine",
 				japanese: 'ワリオこうざん',
 				romaji: 'wario kouzan',
-				src: "Warios_Gold_Mine.png"
+				src: 'Warios_Gold_Mine.png'
 			},
 			{
 				english: '(SNES)Rainbow Road',
