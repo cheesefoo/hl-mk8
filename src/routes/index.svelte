@@ -135,6 +135,14 @@
 				</ul>
 			</li>
 			<li class="text-gray-100 mt-2 text-2xl list-disc">
+				What is a dango?
+				<ul class="list-outside mt-2 ml-4">
+					<li>
+						A clump of players; when a lot of cars are in a group near each other.
+					</li>
+				</ul>
+			</li>
+			<li class="text-gray-100 mt-2 text-2xl list-disc">
 				wtf is Aqua doing?
 				<ul class="list-outside mt-2 ml-4">
 					<li>
