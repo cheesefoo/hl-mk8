@@ -561,7 +561,7 @@ export const items: Array<TranslationItem> = [
 
 	{
 		english: "Crazy 8's, (Miracle 8)",
-		alt: '(meme) Greedy self-destruction set',
+		alt: '(slang) Greedy self-destruction set',
 		japanese: 'ミラクル8, 欲張り自爆セット',
 		romaji: 'mirakuru eito, yokubari jibaku setto',
 		src: 'crazy8.png'
@@ -569,9 +569,9 @@ export const items: Array<TranslationItem> = [
 
 	{
 		english: 'Bullet Bill',
-		alt: 'Killer',
-		japanese: 'キラー',
-		romaji: 'kira',
+		alt: 'Killer, (slang) Taxi',
+		japanese: 'キラー, タクシー',
+		romaji: 'kira, takushi',
 		src: 'bulletbill.png'
 	},
 
