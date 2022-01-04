@@ -560,10 +560,10 @@ export const items: Array<TranslationItem> = [
 	{ english: 'Blooper', alt: 'Ika', japanese: 'ゲッソー', romaji: 'Gesso-', src: 'blooper.png' },
 
 	{
-		english: "Crazy 8's",
-		alt: 'Miracle 8',
-		japanese: 'ミラクル8',
-		romaji: 'mirakuru eito',
+		english: "Crazy 8's, (Miracle 8)",
+		alt: '(meme) Greedy self-destruction set',
+		japanese: 'ミラクル8, 欲張り自爆セット',
+		romaji: 'mirakuru eito, yokubari jibaku setto',
 		src: 'crazy8.png'
 	},
 
